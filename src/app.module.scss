@@ -1,0 +1,390 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.mainbody {
+  background-color: #fbfcfd;
+}
+.body {
+  width: 1024px;
+  margin: auto;
+
+  h1 {
+    width: 1006px;
+    height: 50px;
+    top: 102px;
+    left: 284px;
+    color: #2c384a;
+    font-family: Inter;
+    padding-top: 20px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+.subbarone {
+  display: flex;
+  justify-content: space-between;
+  width: 1024px;
+  margin-top: 20px;
+  padding: 10px 0px;
+  font-size: 13px;
+  border-top: 2px solid #eef0f2;
+  border-bottom: 2px solid #eef0f2;
+
+  .subbaronefront {
+    display: flex;
+    justify-content: space-between;
+    color: #4b5665;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    width: 420px;
+
+    .iicon {
+      margin-left: 15px;
+    }
+  }
+
+  .subbaroneback {
+    display: flex;
+    justify-content: space-between;
+    color: #4b5665;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    width: 105px;
+  }
+  .subbaroneback:hover {
+    cursor: pointer;
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+    color: #4b5665;
+  }
+}
+
+.subbartwo {
+  margin: 10px 0px;
+
+  ul {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+
+    li {
+      list-style: none;
+      color: #4b5665;
+      font-family: Inter;
+      font-size: 12px;
+      padding: 8px 10px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      border-radius: 10px;
+      background-color: #ffffff;
+    }
+
+    li:hover {
+      cursor: pointer;
+      color: #000000;
+    }
+  }
+}
+
+.subbarthree {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #4b5665;
+  width: 400px;
+  margin-bottom: 40px;
+
+  p {
+    font-size: 13px;
+  }
+  p:hover {
+    cursor: pointer;
+    color: #000000;
+  }
+
+  svg {
+    width: 20px;
+    height: 13px;
+  }
+}
+
+.signup {
+  display: flex;
+  justify-content: space-between;
+  p {
+    color: #5c6874;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    width: 400px;
+  }
+
+  div {
+    input {
+      font-size: 10px;
+      border: none;
+      color: #ffffff;
+      height: 40px;
+      width: 268px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    input:focus {
+      outline-color: #1b88f4;
+      outline-width: 0.1px;
+      height: 38.5px;
+    }
+
+    button {
+      background-color: #1b88f4;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding: 12px;
+      font-size: 10px;
+      border: none;
+      color: #ffffff;
+      height: 40px;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.relateddeals {
+  .relateddealshead {
+    color: #2c384a;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 50px;
+  }
+}
+
+.dealproducts {
+  display: flex;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .mainbody {
+    //    width: 1025px;
+  }
+  .body {
+    width: 840px;
+    margin: auto;
+
+    h1 {
+      width: 840px;
+    }
+
+    .subbarone {
+      width: 840px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .body {
+    width: 680px;
+
+    h1 {
+      width: 680px;
+      font-size: 37px;
+    }
+
+    .subbarone {
+      width: 680px;
+    }
+    .subbartwo {
+      ul {
+        width: 680px;
+      }
+    }
+    .dealproducts {
+      display: block;
+    }
+  }
+
+  .signup {
+    display: flex;
+    justify-content: space-between;
+    p {
+      color: #5c6874;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 44px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-left: 20px;
+      margin-bottom: 50px;
+      width: 400px;
+    }
+
+    div {
+      input {
+        height: 36px;
+        width: 168px;
+      }
+      input:focus {
+        height: 35px;
+      }
+
+      button {
+        height: 37px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .body {
+    width: 400px;
+
+    h1 {
+      width: 357px;
+      font-size: 24px;
+    }
+
+    .subbarone {
+      width: 400px;
+      font-size: 10px;
+      .subbaronefront {
+        width: 440px;
+      }
+      .subbaroneback {
+        display: none;
+      }
+    }
+    .subbartwo {
+      ul {
+        width: 400px;
+        li {
+          font-size: 9px;
+        }
+      }
+    }
+
+    .subbarthree {
+      p {
+        font-size: 9px;
+      }
+    }
+  }
+
+  .relateddeals {
+    .relateddealshead {
+      font-size: 23px;
+      margin-top: 5px;
+    }
+  }
+
+  .signup {
+    display: block;
+    p {
+      font-size: 19px;
+      margin-bottom: 3px;
+      margin-left: 9px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      input {
+        height: 25px;
+      }
+      input:focus {
+        height: 24px;
+      }
+      button {
+        height: 25px;
+        padding: 6px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .body {
+    width: 300px;
+
+    h1 {
+      width: 300px;
+      font-size: 20px;
+      padding-top: 5px;
+    }
+
+    .subbarone {
+      width: 300px;
+      font-size: 9px;
+      margin-top: 5px;
+      .subbaronefront {
+        width: 300px;
+      }
+    }
+    .subbartwo {
+      display: none;
+    }
+
+    .subbarthree {
+      margin-top: 5px;
+      width: 300px;
+      p {
+        font-size: 9px;
+      }
+    }
+  }
+
+  .relateddeals {
+    .relateddealshead {
+      font-size: 20px;
+      margin-top: 5px;
+    }
+  }
+
+  .signup {
+    display: block;
+    p {
+      width: 300px;
+      line-height: 37px;
+      font-size: 15px;
+      margin-bottom: 3px;
+      margin-left: 9px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      input {
+        height: 25px;
+      }
+      input:focus {
+        height: 24px;
+      }
+      button {
+        height: 25px;
+        padding: 6px;
+      }
+    }
+  }
+}
